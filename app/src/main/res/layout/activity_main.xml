@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main2"
+    tools:context="com.example.sonali.myweatherapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/current_temperature_field"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/humidity_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:hint="temp"
+        android:textColor="@color/font"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/city_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/details_field"
+        android:layout_centerHorizontal="true"
+        android:hint="city"
+        android:textColor="@color/font"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/details_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_temperature_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:hint="detail"
+        android:textColor="@color/font"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/current_temperature_field"
+        android:layout_alignStart="@+id/current_temperature_field"
+        android:layout_below="@+id/details_field"
+        android:layout_marginTop="12dp"
+        android:hint="icon"
+        android:textColor="@color/font"
+        android:textSize="100sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_drop" />
+
+    <TextView
+        android:id="@+id/humidity_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toLeftOf="@+id/city_field"
+        android:layout_toStartOf="@+id/city_field"
+        android:hint="humidity"
+        android:textColor="@color/font"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pressure_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/current_temperature_field"
+        android:layout_toRightOf="@+id/current_temperature_field"
+        android:hint="pressure"
+        android:textColor="@color/font"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/city_field"
+        android:layout_toRightOf="@+id/city_field"
+        android:src="@drawable/ic_pressure" />
+
+
+    <TextView
+        android:id="@+id/updated_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/city_field"
+        android:layout_toRightOf="@+id/city_field"
+        android:hint="last updated"
+        android:textColor="@color/font"
+        android:textSize="20dp" />
+</RelativeLayout>
